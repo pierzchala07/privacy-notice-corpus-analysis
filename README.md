@@ -20,7 +20,7 @@ The notices are compared against a corpus of gov.uk plain-language pages on the 
 | `notice` | 10 documents | Corporate privacy notices: Airbnb, Amazon, Apple, Booking.com, Google, Microsoft, Netflix, Spotify, TikTok, Twitter/X |
 | `plain` | 10 documents | gov.uk pages on data protection, FOI, and personal-information charters |
 
-**The privacy notice texts and  gov.uk plain-language pages are not republished in this repository for copyright reasons.** The full list of sources with URLs is in [`corpus_sources.md`](corpus_sources.md). 
+**The privacy notice texts and  gov.uk plain-language pages are not republished in this repository for copyright reasons.** The full list of sources with URLs is in [`links_gov_uk.csv`](links_gov_uk.csv) and [`links_privacy_notice.csv`](links_privacy_notice.csv)
 
 ---
 
@@ -49,9 +49,9 @@ Both groups are cleaned with the same function (heading and bullet normalisation
 
 ## Findings
 
-The full per-document feature table is saved as [`corpus_features.csv`](corpus_features.csv); the notebook ([`data_modelling.ipynb`](data_modelling.ipynb)) contains all tables and both charts. Main findings:
+The full per-document feature table is saved as [`corpus_features.csv`](corpus_features.csv); the notebook ([`code_privacy_notices.ipynb`](code_privacy_notices.ipynb)) contains all tables and both charts. Main findings:
 
-![Group means across all features](figures/feature_comparison.png)
+![Group means across all features](feature_comparison.png)
 
 | Feature | Notices (mean) | Plain (mean) | Direction |
 |---|---|---|---|
@@ -74,7 +74,7 @@ Two results run counter to the expectation that notices would score worse on eve
 
 Per-document readability shows the spread behind the group means:
 
-![Readability per document](figures/readability_per_document.png)
+![Readability per document](readability_per_document.png)
 
 Every document - both groups - sits below the ≈60 plain-language target. The gov.uk pages cluster near it; the notices do not. Two notices (Spotify, Google) reach into the plain-language band, showing the boundary is not absolute.
 
