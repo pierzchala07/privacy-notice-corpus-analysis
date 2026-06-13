@@ -6,7 +6,7 @@ A computational corpus linguistics study comparing GDPR-mandated corporate priva
 
 ## Research question
 
-Under GDPR Article 12, privacy notices must be communicated *"in a concise, transparent, intelligible and easily accessible form, using clear and plain language."* This project asks the descriptive question: do they? Therefore, whether contemporary corporate privacy notices exhibit the surface features of plain-language writing characteristic of comparable public-information texts.
+Under GDPR Article 12, privacy notices must be communicated *in a concise, transparent, intelligible and easily accessible form, using clear and plain language.* This project asks the descriptive question: do they? Therefore, whether contemporary corporate privacy notices exhibit the surface features of plain-language writing characteristic of comparable public-information texts.
 
 The notices are compared against a corpus of gov.uk plain-language pages on the same subject matter (data protection, FOI, personal-information charters, ...),  drawn from the UK Government's central digital service. Content published on gov.uk is required to follow the official Writing for GOV.UK guidance and the GOV.UK Style Guide, which prescribe plain-English principles like short sentences, active voice, common vocabulary, etc. The gov.uk corpus therefore functions as a documented example of UK public-sector writing produced under an enforced plain-language standard, rather than as a normative ground truth.
 
@@ -88,7 +88,7 @@ Every document - both groups - sits below the ≈60 plain-language target. The g
 ## Limitations
 
 - **Small corpus (n = 10 per group).** Results are descriptive and indicative, not statistically inferential.
-- **TTR is computed on a 200-word random content-word window** - smaller than the conventional 1,000-word window, chosen so the shortest gov.uk documents could be included. The small, randomly-drawn window makes TTR noisier and somewhat sensitive to sample size.
+- **TTR is computed on a 200-word random content-word window** - smaller than the conventional 1,000-word window, chosen so the shortest gov.uk documents could be included. The small, randomly-drawn window makes TTR noisier and more sensitive to sample size.
 - **Rate-based features (formal phrases, deontic and epistemic modals)** are normalised per 1,000 words. This makes them comparable across document lengths but noisier for short documents, where a single phrase or modal shifts the rate substantially. 
 - **Benchmark limitation** - the "plain" group is a documented example of UK public-sector plain-language writing on overlapping subject matter, not a normative ground truth.
 
