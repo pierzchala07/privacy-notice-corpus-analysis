@@ -87,9 +87,17 @@ Every document - both groups - sits below the ≈60 plain-language target. The g
 - **KWIC concordances** - Typical notice formulas are rare or absent in the plain corpus: *we may collect* appears 20 times across the notices and not once in the gov.uk pages; *third parties* 53 times vs 5; *in accordance with* 16 vs 2; *your information* 82 vs 13. Read in context, the notice occurrences are strikingly repetitive - near-identical *we may collect* frames recur across companies — supporting the picture of privacy notices as assembled from a shared stock of legal formulas rather than written afresh for the reader.
 ---
 
+## Inferential statistics
+
+95% confidence intervals for average sentence length (t-distribution, df = 9) do not overlap between groups: plain 14.78–17.29, notices 21.47–28.55 words per sentence. The separation suggests the difference is unlikely to be an artefact of sampling variation.
+
+Full analysis in [`code_statistics.ipynb`](code_statistics.ipynb) and [`report_statistics.pdf`](report_statistics.pdf).
+
+---
+
 ## Limitations
 
-- **Small corpus (n = 10 per group).** Results are descriptive and indicative, not statistically inferential.
+- **Small corpus (n = 10 per group).** Confidence intervals are reported for sentence length, but no formal hypothesis test was performed; results remain indicative rather than definitive.
 - **TTR is computed on a 200-word random content-word window** - smaller than the conventional 1,000-word window, chosen so the shortest gov.uk documents could be included. The small, randomly-drawn window makes TTR noisier and more sensitive to sample size.
 - **Rate-based features (formal phrases, deontic and epistemic modals)** are normalised per 1,000 words. This makes them comparable across document lengths but noisier for short documents, where a single phrase or modal shifts the rate substantially. 
 - **Benchmark limitation** - the "plain" group is a documented example of UK public-sector plain-language writing on overlapping subject matter, not a normative ground truth.
