@@ -1,6 +1,8 @@
 # "Clear and Plain Language"? A Corpus-Based Test of GDPR Privacy Notices Against Plain-Language Benchmarks
 
-A computational corpus linguistics study comparing GDPR-mandated corporate privacy notices against gov.uk plain-language public-information pages.
+A computational corpus linguistics study comparing GDPR-mandated corporate privacy notices against gov.uk plain-language public-information pages. A computational corpus linguistics study comparing GDPR-mandated corporate privacy notices against gov.uk plain-language public-information pages, combining feature extraction with descriptive and inferential statistics.
+
+Full statistical report: report_statistics.pdf
 
 ---
 
